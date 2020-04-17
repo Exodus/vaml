@@ -100,9 +100,9 @@ def put(config, var_group: str):
                         'name': data['name'],
                         'description': '',
                         'variables': data['variables']}
-            config.queries.update({'groupId': data['id']})
-            print(f"Posting {file}")
-            requests.put(config.url, data=json.dumps(payload), auth=config.obj.auth, headers=config.obj.headers, params=config.obj.queries)
+            config.obj.queries.update({'groupId': data['id']})
+            print(f"Posting {file.name}")
+            requests.put(config.obj.url, data=json.dumps(payload), auth=config.obj.auth, headers=config.obj.headers, params=config.obj.queries)
     else:
         print("No file match")
         exit(1)

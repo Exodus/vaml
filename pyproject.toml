@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "vaml"
-version = "0.1.0"
+version = "0.1.1"
 description = "Azure DevOps Variable Groups as YAML files"
 authors = ["Miguel A. Alvarado V. <alvaradoma@gmail.com>"]
 maintainers = ["Miguel A. Alvarado V. <alvaradoma@gmail.com>"]
